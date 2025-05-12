@@ -161,3 +161,26 @@ thead th.sticky-col {
     background-color: var(--header-bg-color, #333); /* Фон як у заголовків */
     z-index: 15;
 }
+/* ... (інші стилі) ... */
+
+/* Стиль для рядка-роздільника дати */
+.date-separator-row td {
+    background-color: var(--tg-secondary-bg-color, #181818); /* Темніший фон */
+    color: var(--tg-hint-color, #aaaaaa); /* Сіруватий текст */
+    text-align: center !important; /* Текст по центру */
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 12px 8px;
+    /* Важливо: Забираємо межі для цього рядка, щоб він виглядав як заголовок */
+    border: none;
+     /* Можна додати верхню/нижню межу для кращого візуального розділення */
+    border-top: 2px solid var(--table-border-color, #444);
+    border-bottom: 2px solid var(--table-border-color, #444);
+}
+
+/* Забираємо ефект "прилипання" для цього специфічного рядка, якщо він випадково успадкується */
+.date-separator-row td.sticky-col {
+    position: static; /* або unset */
+}
+
+/* ... (решта стилів) ... */
