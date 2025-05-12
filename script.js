@@ -129,3 +129,16 @@ document.addEventListener('DOMContentLoaded', () => {
      // loadData();
 
 }); // Кінець DOMContentLoaded
+
+// Всередині обробника кнопки збереження:
+const data = collectTableData();
+if (data && data.length > 0) {
+    // Перетворюємо масив об'єктів у JSON-рядок
+    const jsonData = JSON.stringify(data);
+    // Відправляємо дані боту
+    tg.sendData(jsonData);
+    // Можна ще показати сповіщення про успіх або закрити WebApp
+    // tg.close();
+} else {
+    tg.showAlert('Немає даних для збереження.');
+}
