@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Щоденник тренувань</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <h2 id="current-date">Субота 29.03</h2> <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2" class="sticky-col sticky-col-1">№</th>
+                        <th rowspan="2" class="sticky-col sticky-col-2">Вправа</th>
+                        <th colspan="2">Підхід 1</th>
+                        <th colspan="2">Підхід 2</th>
+                        <th colspan="2">Підхід 3</th>
+                        <th colspan="2">Підхід 4</th>
+                        <th rowspan="2">Примітки</th>
+                    </tr>
+                    <tr>
+                        <th>Вага</th><th>Повт.</th>
+                        <th>Вага</th><th>Повт.</th>
+                        <th>Вага</th><th>Повт.</th>
+                        <th>Вага</th><th>Повт.</th>
+                        </tr>
+                </thead>
+                <tbody id="training-table-body">
+                    <tr>
+                        <td class="sticky-col sticky-col-1">1</td>
+                        <td class="sticky-col sticky-col-2" contenteditable="true">T-Bar row</td>
+                        <td contenteditable="true">35</td><td contenteditable="true">12</td>
+                        <td contenteditable="true">37.5</td><td contenteditable="true">11</td>
+                        <td contenteditable="true">37.5</td><td contenteditable="true">8</td>
+                        <td contenteditable="true">35</td><td contenteditable="true">9</td>
+                        <td contenteditable="true"></td> </tr>
+                     <tr>
+                        <td class="sticky-col sticky-col-1">2</td>
+                        <td class="sticky-col sticky-col-2" contenteditable="true">Scott machine</td>
+                        <td contenteditable="true">25</td><td contenteditable="true">8</td>
+                        <td contenteditable="true">25</td><td contenteditable="true">7</td>
+                        <td contenteditable="true">20</td><td contenteditable="true">9</td>
+                        <td contenteditable="true"></td><td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                     <tr>
+                        <td class="sticky-col sticky-col-1">3</td>
+                        <td class="sticky-col sticky-col-2" contenteditable="true">Vertical row</td>
+                        <td contenteditable="true">60</td><td contenteditable="true">8</td>
+                        <td contenteditable="true">55</td><td contenteditable="true">8.5</td>
+                        <td contenteditable="true">55</td><td contenteditable="true">8</td>
+                        <td contenteditable="true"></td><td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="sticky-col sticky-col-1">4</td>
+                        <td class="sticky-col sticky-col-2" contenteditable="true">Reverse grip barbell curls</td>
+                        <td contenteditable="true">25</td><td contenteditable="true">9</td>
+                        <td contenteditable="true">25</td><td contenteditable="true">8</td>
+                        <td contenteditable="true">25</td><td contenteditable="true">8</td>
+                        <td contenteditable="true"></td><td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="sticky-col sticky-col-1">5</td>
+                        <td class="sticky-col sticky-col-2" contenteditable="true">Horizontal row (WG)</td>
+                        <td contenteditable="true">55</td><td contenteditable="true">8.5</td>
+                        <td contenteditable="true">50</td><td contenteditable="true">10.5</td>
+                        <td contenteditable="true">50</td><td contenteditable="true">9.5</td>
+                        <td contenteditable="true"></td><td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="sticky-col sticky-col-1">6</td>
+                        <td class="sticky-col sticky-col-2" contenteditable="true">Cable wrist curls</td>
+                        <td contenteditable="true">40</td><td contenteditable="true">20</td>
+                        <td contenteditable="true">45</td><td contenteditable="true">25</td>
+                        <td contenteditable="true">55</td><td contenteditable="true">16</td>
+                        <td contenteditable="true"></td><td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>
+
+        <div class="controls">
+            <button id="add-exercise-btn">Додати вправу</button>
+            <button id="save-data-btn">Зберегти дані (WIP)</button>
+        </div>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
