@@ -137,3 +137,27 @@ button:hover {
 button:active {
     filter: brightness(0.9);
 }
+
+.sticky-col {
+    position: sticky;
+    background-color: var(--sticky-col-bg, #2a2a2a); /* Явно задаємо фон */
+    z-index: 5;
+}
+.sticky-col-1 {
+    left: 0;
+    min-width: 40px;
+    max-width: 40px;
+    background-color: var(--sticky-col-bg, #2a2a2a); /* Явно задаємо фон */
+}
+.sticky-col-2 {
+    left: 40px; /* Або яка там реальна ширина першої колонки */
+    min-width: 150px;
+    text-align: left;
+    background-color: var(--sticky-col-bg, #2a2a2a); /* Явно задаємо фон */
+}
+
+/* Переконайся, що фон заголовків теж заданий і z-index вищий */
+thead th.sticky-col {
+    background-color: var(--header-bg-color, #333); /* Фон як у заголовків */
+    z-index: 15;
+}
